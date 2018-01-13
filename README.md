@@ -36,3 +36,7 @@ Assets -> Sample のSampleシーンで再生できます。
 <p align="center">
  サンプル動画(Click image).
 </p>
+
+
+
+© UTJ/UCL
