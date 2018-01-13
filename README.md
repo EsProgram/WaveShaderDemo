@@ -1,6 +1,9 @@
 # WaveShaderDemo
 
+Unityで水の表現をして見るやつ。記事は以下から。
 [Unityで波打つ水表現のサンプル](http://esprog.hatenablog.com/entry/2018/01/10/000942)
+
+Assets -> Sample のSampleシーンで再生できます。
 
 ## 環境
  * Unity 2017.2.1f1
