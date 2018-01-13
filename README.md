@@ -5,6 +5,9 @@ Unityで水の表現をして見るやつ。記事は以下から。
 
 Assets -> Sample のSampleシーンで再生できます。
 
+
+© UTJ/UCL
+   
 ## 環境
  * Unity 2017.2.1f1
  * DirectX 11
@@ -36,7 +39,3 @@ Assets -> Sample のSampleシーンで再生できます。
 <p align="center">
  サンプル動画(Click image).
 </p>
-
-
-
-© UTJ/UCL
