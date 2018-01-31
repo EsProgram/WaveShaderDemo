@@ -54,7 +54,7 @@
 			o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 			return o;
 		}
-		
+
 		fixed4 frag (v2f i) : SV_Target
 		{
 			//通常の法線マップからx,y方向の歪みを取得する
@@ -72,10 +72,10 @@
 			float3 texz = 2 * tex2Dlod(_WaveTex, float4(i.uv.xy - shiftZ,0,0)) - 1;
 			float3 du = { 1, 0, _NormalScaleFactor * (texX.x - texx.x) };
 			float3 dv = { 0, 1, _NormalScaleFactor * (texZ.x - texz.x) };
-			bump += normalize(cross(du, dv)) * 0.5 + 0.5;
+			bump += normalize(cross(du, dv));
 
 			//(通常の法線マップ+波の法線)から、投影するテクスチャのオフセットを計算
-			float2 offset = bump * _BumpAmt - _BumpAmt * 0.5;
+			float2 offset = bump * _BumpAmt * _RefTex_TexelSize;
 			i.ref.xy = offset * i.ref.z + i.ref.xy;
 			float4 ref = tex2D(_RefTex, i.ref.xy / i.ref.w * 0.5 + 0.5);
 
